@@ -1,0 +1,93 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage{latexsym}
+\usepackage{enumitem}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{fancyhdr}
+
+% Page setup
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\tabcolsep}{0in}
+
+% Custom sections
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-1pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \textbf{#1} \hfill #2 \\
+    \textit{\small#3} \hfill \textit{\small #4}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+\renewcommand{\labelitemii}{$\circ$}
+
+% Document
+\begin{document}
+
+\begin{center}
+  {\Huge \scshape Miguel Ramirez} \\ \vspace{1pt}
+  Austin, TX \\ 
+  \href{mailto:mramirez@example.com}{mramirez@example.com} $|$
+  \href{https://github.com/yourusername}{github.com/yourusername} $|$
+  \href{https://elmarfitness.com}{elmarfitness.com}
+\end{center}
+
+% Education
+\section*{Education}
+\begin{itemize}[leftmargin=0.15in]
+  \item[]
+    \textbf{B.S. Kinesiology}, University Name \hfill 20XX
+\end{itemize}
+
+% Experience
+\section*{Experience}
+\begin{itemize}[leftmargin=0.15in]
+  \resumeSubheading
+    {Office Manager}{2025–Present}
+    {Lawyer's Aid Service, Inc., Austin TX}{}
+    \resumeItem{Verified filings done with the Secretary of State}
+    \resumeItem{Managed and organized client files}
+    \resumeItem{Coordinated with clients and attorneys}
+    \resumeItem{Maintained and updated the company website}
+    \resumeItem{Created and maintained a database of client information}
+    \resumeItem{Developed and implemented office procedures}
+    \resumeItem{Supervised and Trained Staff}
+  \resumeSubheading
+    {Freelance Web Developer}{2022–Present}
+    {AzTech Solutions, Austin TX}{}
+    \resumeItem{Built client sites using Next.js, Vue, and AWS S3.}
+    \resumeItem{Integrated APIs for Texas franchise filings and SquareSpace data.}
+  \resumeSubheading
+    {Fitness Consultant, Personal Trainer}{2022–Present}
+    {El Mar Fitness LLC, Austin TX}{}
+    \resumeItem{Developed Personalized Training and Nutrition Plans}
+    \resumeItem{Supervised and Trained Clients}
+\end{itemize}
+
+% Projects
+\section*{Projects}
+\begin{itemize}[leftmargin=0.15in]
+  \resumeSubheading
+    {AI Character LoRA Lab}{2025}
+    {Local AI Dev Tools}{}
+    \resumeItem{Created modular workflow to train LoRA models using \texttt{\detokenize{kohya_ss}}.}
+\end{itemize}
+
+% Skills
+\section*{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \item \textbf{Languages:} JavaScript, Python, SQL
+  \item \textbf{Frameworks:} Next.js, Vue, Tailwind, Express
+  \item \textbf{Tools:} Git, VSCode, AWS, Azure, LaTeX
+\end{itemize}
+
+\end{document}
