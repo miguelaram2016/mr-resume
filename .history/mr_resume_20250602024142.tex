@@ -40,7 +40,6 @@
 % Global list spacing and left margin: adjust these values to control vertical space and indentation in all itemize/enumerate
 \setlist[itemize]{leftmargin=0in, itemsep=1pt, parsep=0pt, topsep=1pt, partopsep=0pt}
 \setlist[enumerate]{leftmargin=0in, itemsep=1pt, parsep=0pt, topsep=1pt, partopsep=0pt}
-\renewcommand{\labelitemi}{$\circ$} % Use open circle for all first-level bullets
 
 % Section formatting
 \titleformat{\section}{
@@ -52,7 +51,7 @@
 
 % Custom commands
 % Indent only the bullet points (\resumeItem) by adding \hspace
-\newcommand{\resumeItem}[1]{\item \small{#1}}
+\newcommand{\resumeItem}[1]{\item\hspace{10pt}\small{#1}}
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \textbf{#1} \hfill #2 \\
@@ -96,7 +95,7 @@
   \item[]
     \textbf{Manager, Paralegal Clerk, Bookkeeper} \hfill 2025–Present \\
     \textit{Lawyer's Aid Service, Inc., Austin, TX}
-    \begin{itemize}[leftmargin=0.15in]
+    \begin{itemize}
       \resumeItem{Streamlined corporate filing processes by verifying compliance with Texas SOS standards, reducing document rejection rates by 25\%.}
       \resumeItem{Maintained a centralized client records system, increasing retrieval efficiency by 40\%.}
       \resumeItem{Led onboarding and training of new staff, establishing clear documentation for office procedures.}
@@ -105,7 +104,7 @@
   \item[]
     \textbf{Freelance Web Developer} \hfill 2022–Present \\
     \textit{AzTech Solutions, Remote / Austin, TX}
-    \begin{itemize}[leftmargin=0.15in]
+    \begin{itemize}
       \resumeItem{Engineered responsive web apps using Next.js, Vue, and Tailwind, accelerating client launch cycles.}
       \resumeItem{Integrated public APIs for state filings and CMS platforms, enabling clients to automate data workflows.}
       \resumeItem{Deployed secure, scalable solutions using Azure, Vercel, and Netlify to support production-ready projects.}
@@ -114,8 +113,8 @@
   \item[]
     \textbf{Fitness Consultant, Personal Trainer} \hfill 2021–Present \\
     \textit{El Mar Fitness LLC, Remote / Austin, TX}
-    \begin{itemize}[leftmargin=0.15in]
-      \resumeItem{Customized strength and nutrition programs personalized to fit client needs, resulting in improved client retention and performance.}
+    \begin{itemize}
+      \resumeItem{Customized strength and nutrition programs tailored to individual client needs, resulting in improved client retention and performance.}
       \resumeItem{Automated billing, CRM, and communication workflows using training platforms and spreadsheets.}
       \resumeItem{Managed end-to-end business operations, from client onboarding to legal filings and reporting.}
     \end{itemize}
@@ -127,7 +126,7 @@
   \item[]
     \textbf{\href{https://mig.is-a.dev}{Portfolio} \& \href{https://github.com/miguelaram2016}{GitHub}:} \href{https://mig.is-a.dev}{mig.is-a.dev} \& \href{https://github.com/miguelaram2016}{github.com/miguelaram2016} \hfill Ongoing \\
     \textit{Web Dev + ML Projects}
-    \begin{itemize}[leftmargin=0.15in]
+    \begin{itemize}
       \resumeItem{Developed and iterated personal project portfolio showcasing frontend/backend skills in JavaScript, Node, and Python.}
       \resumeItem{Improved code readability and project modularity to support collaborative development and reuse.}
     \end{itemize}
@@ -135,7 +134,7 @@
   \item[]
     \textbf{\href{https://elmarfitness.com}{elmarfitness.com}} \hfill Ongoing \\
     \textit{Business Website}
-    \begin{itemize}[leftmargin=0.15in]
+    \begin{itemize}
       \resumeItem{Launched client-facing business platform with real-time scheduling, email automation, and a custom CMS.}
       \resumeItem{Optimized page load time and user experience across mobile and desktop interfaces.}
     \end{itemize}
@@ -143,7 +142,7 @@
   \item[]
     \textbf{\href{https://marshallbenson.com}{marshallbenson.com}} \hfill 2025 \\
     \textit{Full Stack Web App}
-    \begin{itemize}[leftmargin=0.15in]
+    \begin{itemize}
       \resumeItem{Developed a full-stack web application for a local artist, integrating a custom CMS for content management.}
       \resumeItem{Implemented a secure authentication system to protect user data and enhance site security.}
       \resumeItem{Engineered a custom middleware solution to bridge Squarespace's frontend with Azure-hosted backend services.}
@@ -153,7 +152,7 @@
   \item[]
     \textbf{AI Character LoRA Lab} \hfill 2025 \\
     \textit{Local AI Dev Tools}
-    \begin{itemize}[leftmargin=0.15in]
+    \begin{itemize}
       \resumeItem{Designed modular pipeline for rapid training of LoRA models using \texttt{kohya\_ss}, reducing training time by 30\%.}
       \resumeItem{Implemented GPU-efficient workflows to enable character-specific fine-tuning for SDXL-compatible output.}
     \end{itemize}
@@ -162,10 +161,9 @@
 % Community Involvement
 \section*{Community Involvement}
 \begin{itemize}
-  \item[] 
-  \textbf{San Antonio Food Bank:} Urban Farm Volunteer, \hfill April 2025 \\
+  \item[] \textbf{San Antonio Food Bank:} Urban Farm Volunteer, \hfill 2025–Present \\
   \textit{Assisted in the maintenance and harvesting of crops, contributing to local food security initiatives.}
-  \begin{itemize}[leftmargin=0.15in]
+  \begin{itemize}
     \resumeItem{Supported weekly harvests and crop rotations.}
     \resumeItem{Collaborated with volunteers to optimize workflow.}
   \end{itemize}
@@ -173,7 +171,7 @@
 
 % Skills
 \section*{Skills}
-\begin{itemize}[leftmargin=0.15in]
+\begin{itemize}
   \resumeItem{\textbf{Programming Languages:} JavaScript, Python, HTML/CSS, SQL, Java, C++}
   \resumeItem{\textbf{Frameworks/Tools:} Next.js, Vue, Tailwind, Express, Git, LaTeX, VSCode, OpenAI API}
   \resumeItem{\textbf{Platforms:} GitHub, Vercel, Netlify, Render, Azure, AWS S3, Overleaf}

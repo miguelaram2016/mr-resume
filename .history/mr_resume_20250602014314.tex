@@ -37,11 +37,6 @@
 
 \urlstyle{same}
 
-% Global list spacing and left margin: adjust these values to control vertical space and indentation in all itemize/enumerate
-\setlist[itemize]{leftmargin=0in, itemsep=1pt, parsep=0pt, topsep=1pt, partopsep=0pt}
-\setlist[enumerate]{leftmargin=0in, itemsep=1pt, parsep=0pt, topsep=1pt, partopsep=0pt}
-\renewcommand{\labelitemi}{$\circ$} % Use open circle for all first-level bullets
-
 % Section formatting
 \titleformat{\section}{
   \vspace{-10pt}\scshape\raggedright\large
@@ -51,25 +46,20 @@
 \pdfgentounicode=1
 
 % Custom commands
-% Indent only the bullet points (\resumeItem) by adding \hspace
-\newcommand{\resumeItem}[1]{\item \small{#1}}
+\newcommand{\resumeItem}[1]{\item\small{#1}}
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \textbf{#1} \hfill #2 \\
     \textit{\small#3} \hfill \textit{\small #4}
 }
-\newcommand{\resumeSection}[4]{
-  \vspace{-1pt}\item
-    \textbf{#1} \hfill #2 \\
-    \textit{\small#3} \hfill \textit{\small #4}
-}
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1} }
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
 \renewcommand{\labelitemii}{$\circ$}
 
 % Document
 \begin{document}
 
 % Heading
+
 \begin{center}
   {\Large \scshape Miguel Ramirez} \\ \vspace{0pt}
   Austin, TX | \href{tel:+15128970010}{(512)897-0010} \\ 
@@ -78,22 +68,28 @@
   \href{https://github.com/miguelaram2016}{github.com/miguelaram2016} $|$
   \href{https://mig.is-a.dev}{mig.is-a.dev}
 \end{center}
+%-------------------------------------------------
+%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%  \textbf{\href{https://mig.is-a.dev}{\Large Miguel Ramirez}} & Email: \href{mailto:miguelcodes7@gmail.com}{miguelcodes7@gmail.com}\\
+%  \href{https://mig.is-a.dev}{mig.is-a.dev} & Mobile: \href{tel:+15128970010}{(512)897-0010} \\
+%\end{tabular*}
+%-------------------------------------------------
 
 % Education
 \section*{Education}
-\begin{itemize}
+\begin{itemize}[leftmargin=0in]
   \item[]
     \textbf{The University of Texas at Austin}, Austin, TX \hfill May 2021 \\
-    \textit{Bachelor of Science in Kinesiology}; Minor in Portuguese \vspace{3pt} \\ 
-    % Certifications
+    \textit{Bachelor of Science in Kinesiology}; Minor in Portuguese \\
+    % Certifications}
     \textbf{Certifications} \\
     \textit{Machine Learning with Python}, FreeCodeCamp \hfill March 2025 
 \end{itemize}
 
 % Experience
 \section*{Experience}
-\begin{itemize}
-  \item[]
+\begin{itemize}[leftmargin=0in] 
+  \item[]\vspace{-5pt}
     \textbf{Manager, Paralegal Clerk, Bookkeeper} \hfill 2025–Present \\
     \textit{Lawyer's Aid Service, Inc., Austin, TX}
     \begin{itemize}[leftmargin=0.15in]
@@ -115,7 +111,7 @@
     \textbf{Fitness Consultant, Personal Trainer} \hfill 2021–Present \\
     \textit{El Mar Fitness LLC, Remote / Austin, TX}
     \begin{itemize}[leftmargin=0.15in]
-      \resumeItem{Customized strength and nutrition programs personalized to fit client needs, resulting in improved client retention and performance.}
+      \resumeItem{Customized strength and nutrition programs tailored to individual client needs, resulting in improved client retention and performance.}
       \resumeItem{Automated billing, CRM, and communication workflows using training platforms and spreadsheets.}
       \resumeItem{Managed end-to-end business operations, from client onboarding to legal filings and reporting.}
     \end{itemize}
@@ -123,7 +119,7 @@
 
 % Projects
 \section*{Projects}
-\begin{itemize}
+\begin{itemize}[leftmargin=0in]
   \item[]
     \textbf{\href{https://mig.is-a.dev}{Portfolio} \& \href{https://github.com/miguelaram2016}{GitHub}:} \href{https://mig.is-a.dev}{mig.is-a.dev} \& \href{https://github.com/miguelaram2016}{github.com/miguelaram2016} \hfill Ongoing \\
     \textit{Web Dev + ML Projects}
@@ -140,7 +136,7 @@
       \resumeItem{Optimized page load time and user experience across mobile and desktop interfaces.}
     \end{itemize}
 
-  \item[]
+    \item[]
     \textbf{\href{https://marshallbenson.com}{marshallbenson.com}} \hfill 2025 \\
     \textit{Full Stack Web App}
     \begin{itemize}[leftmargin=0.15in]
@@ -159,32 +155,28 @@
     \end{itemize}
 \end{itemize}
 
+
 % Community Involvement
 \section*{Community Involvement}
-\begin{itemize}
-  \item[] 
-  \textbf{San Antonio Food Bank:} Urban Farm Volunteer, \hfill April 2025 \\
+\begin{itemize}[leftmargin=0in, label={}]
+  \item \textbf{San Antonio Food Bank:} Urban Farm Volunteer, \hfill 2025–Present \\
   \textit{Assisted in the maintenance and harvesting of crops, contributing to local food security initiatives.}
-  \begin{itemize}[leftmargin=0.15in]
-    \resumeItem{Supported weekly harvests and crop rotations.}
-    \resumeItem{Collaborated with volunteers to optimize workflow.}
-  \end{itemize}
 \end{itemize}
 
 % Skills
 \section*{Skills}
-\begin{itemize}[leftmargin=0.15in]
-  \resumeItem{\textbf{Programming Languages:} JavaScript, Python, HTML/CSS, SQL, Java, C++}
-  \resumeItem{\textbf{Frameworks/Tools:} Next.js, Vue, Tailwind, Express, Git, LaTeX, VSCode, OpenAI API}
-  \resumeItem{\textbf{Platforms:} GitHub, Vercel, Netlify, Render, Azure, AWS S3, Overleaf}
-  \resumeItem{\textbf{Spoken Languages:} Fluent in Spanish; Conversational Portuguese}
-  \resumeItem{\textbf{Soft Skills:} Problem-solving, Communication, Teamwork, Time Management, Adaptability}
-%  \resumeItem{\textbf{AI Models \& Tools:} ChatGPT, Stable Diffusion, LoRA, SDXL, \texttt{Kohya\_ss}, ComfyUI, Automatic1111, InvokeAI, Stable Horde}
-%  \resumeItem{\textbf{Libraries:} PyTorch, TensorFlow, Hugging Face Transformers}
-%  \resumeItem{\textbf{Deployment:} Docker, Azure Web Apps, Vercel, Netlify}
-%  \resumeItem{\textbf{Data Management:} SQL Server, MongoDB, PostgreSQL, SQLite}
-%  \resumeItem{\textbf{Development Tools:} Jupyter Notebooks, PyCharm, VSCode}
-%  \resumeItem{\textbf{Version Control:} Git, GitHub, GitLab}
+\begin{itemize}[leftmargin=0in, label={}]
+  \item \textbf{Programming Languages:} JavaScript, Python, HTML/CSS, SQL, Java, C++, 
+  \item \textbf{Frameworks/Tools:} Next.js, Vue, Tailwind, Express, Git, LaTeX, VSCode, OpenAI API
+  \item \textbf{Platforms:} GitHub, Vercel, Netlify, Render, Azure, AWS S3, Overleaf
+  \item \textbf{Spoken Languages:} Fluent in Spanish; Conversational Portuguese
+  \item \textbf{Soft Skills:} Problem-solving, Communication, Teamwork, Time Management, Adaptability
+%  \item \textbf{AI Models \& Tools:} ChatGPT, Stable Diffusion, LoRA, SDXL, \texttt{Kohya\_ss}, ComfyUI, Automatic1111, InvokeAI, Stable Horde
+%  \item \textbf{Libraries} PyTorch, TensorFlow, Hugging Face Transformers
+%  \item \textbf{Deployment:} Docker, Azure Web Apps, Vercel, Netlify
+%  \item \textbf{Data Management:} SQL Server, MongoDB, PostgreSQL, SQLite
+%  \item \textbf{Development Tools:} Jupyter Notebooks, PyCharm, VSCode
+%  \item \textbf{Version Control:} Git, GitHub, GitLab
 \end{itemize}
 
 \end{document}
