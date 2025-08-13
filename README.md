@@ -41,13 +41,13 @@ It’s designed to be easy to edit, compile, and preview directly in VSCode usin
    git clone https://github.com/miguelaram2016/mr-resume.git
    cd mr-resume
 2. Open in VSCode
-   Install the LaTeX Workshop extension.
+    Install the LaTeX Workshop extension.
 3. Compile the resume
-- Open mr_resume.tex
-- Run the LaTeX Workshop build recipe (Ctrl + Alt + B by default)
-- This will generate both:
-    - mr_resume.pdf
-    - mr_resume_preview.png (for README display)
+    - Open mr_resume.tex
+    - Run the LaTeX Workshop build recipe (Ctrl + Alt + B by default)
+    - This will generate both:
+        - mr_resume.pdf
+        - mr_resume_preview.png (for README display)
    
 ---
 
