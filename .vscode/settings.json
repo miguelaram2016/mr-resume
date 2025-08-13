@@ -7,5 +7,58 @@
         "SDXL",
         "Squarespace",
         "Vercel"
-    ]
+    ],
+
+  // Build outputs next to the .tex
+  "latex-workshop.latex.outDir": ".",
+
+  // Build when you save
+  "latex-workshop.latex.autoBuild.run": "onSave",
+
+  // Tools: compile with pdflatex twice, then make PNG(s)
+  "latex-workshop.latex.tools": [
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": ["-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"]
+    },
+    {
+      // High-res, true-color PNG of page 1
+      "name": "pdf2png_full",
+      "command": "magick",
+      "args": [
+        "-density", "600",
+        "%OUTDIR%/%DOCFILE%.pdf[0]",
+        "-background", "white", "-alpha", "remove", "-alpha", "off",
+        "-colorspace", "sRGB",
+        "-strip",
+        "-filter", "Lanczos",
+        "-unsharp", "0x0.6+0.6+0.02",
+        "PNG24:%OUTDIR%/%DOCFILE%.png"
+      ]
+    },
+    {
+      // Lightweight preview for README (loads fast on GitHub)
+      "name": "pdf2png_preview",
+      "command": "magick",
+      "args": [
+        "-density", "600",
+        "%OUTDIR%/%DOCFILE%.pdf[0]",
+        "-background", "white", "-alpha", "remove", "-alpha", "off",
+        "-colorspace", "sRGB",
+        "-strip",
+        "-filter", "Lanczos",
+        "-resize", "1200x",
+        "PNG24:%OUTDIR%/%DOCFILE%_preview.png"
+      ]
+    }
+  ],
+
+  // Recipe: run pdflatex twice, then export PNGs
+  "latex-workshop.latex.recipes": [
+    { "name": "pdflatex x2 ➜ png (full+preview)", "tools": ["pdflatex", "pdflatex", "pdf2png_full", "pdf2png_preview"] }
+  ],
+
+  // Use the last recipe you ran as default
+  "latex-workshop.latex.recipe.default": "lastUsed"
 }

@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build resume (PDF + hi-res PNG + preview)",
+      "type": "shell",
+      "command": "pdflatex mr_resume.tex && pdflatex mr_resume.tex && magick -density 600 mr_resume.pdf[0] -background white -alpha remove -alpha off -colorspace sRGB -strip -filter Lanczos -unsharp 0x0.6+0.6+0.02 PNG24:mr_resume.png && magick -density 600 mr_resume.pdf[0] -background white -alpha remove -alpha off -colorspace sRGB -strip -filter Lanczos -resize 1200x PNG24:mr_resume_preview.png",
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    }
+  ]
+}
