@@ -1,0 +1,137 @@
+%-------------------------------------------------
+% Resume in LaTeX
+% Author: Miguel Ramirez
+% Date: 2025
+% License: MIT License
+%-------------------------------------------------
+
+\documentclass[letterpaper,10pt]{article}
+\usepackage{latexsym}
+\usepackage{enumitem}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{fancyhdr}
+
+% Page setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+% List settings
+\setlist[itemize]{noitemsep, leftmargin=0.1in}
+\setlist[enumerate]{noitemsep, leftmargin=0.1in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[{\color{black}\titlerule\vspace{-3pt}}]
+
+% Ensure ATS readability
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+
+% Document
+\begin{document}
+
+% Heading
+\begin{center}
+  {\Large \scshape Miguel Ramirez} \\ \vspace{0pt}
+  Austin, TX | (512) 897-0010 | miguelcodes7@gmail.com \\ 
+  linkedin.com/in/mramirez-fs | github.com/miguelaram2016 | mig.is-a.dev
+\end{center}
+
+% Professional Summary
+\section*{Professional Summary}
+Results-driven AI-First Full Stack Engineer with hands-on experience building AI-native products using Claude, Codex, and local LLMs. Skilled in prompt architecture, API integration, and shipping MVPs fast. Self-taught developer passionate about AI automation and building tools that solve real problems.
+
+% Technical Skills
+\section*{Technical Skills}
+\textbf{Programming Languages:} Python, JavaScript, SQL, TypeScript, C/C++, HTML/CSS \newline
+\textbf{AI/LLM Tools:} Claude Code, Cursor, OpenAI API, Local LLM, RAG, Prompt Engineering \newline
+\textbf{Frameworks and Tools:} Next.js, Vue.js, Express, Flask, Git \newline
+\textbf{Cloud and Platforms:} Azure, AWS, Vercel, Netlify, SQL Server, MySQL
+
+% Professional Experience
+\section*{Professional Experience}
+\begin{itemize}
+  \item[]
+    \textbf{Operations Manager} \hfill 2024--Present \\
+    \textit{Lawyer's Aid Service, Inc., Austin, TX}
+  \begin{itemize}
+    \resumeItem{Manage business filings with Texas Secretary of State---incorporations, LLC formations, registered agent services---ensuring compliance and timely submissions.}
+    \resumeItem{Oversee team operations and workflow, improving employee onboarding by 25\%.}
+    \resumeItem{Streamline reconciliation workflows, reducing time by 50\% while improving accuracy in financial processes.}
+  \end{itemize}
+
+  \item[]
+    \textbf{Freelance Full Stack Web Developer} \hfill 2022--Present \\
+    \textit{AzTech Solutions, Remote / Austin, TX}
+  \begin{itemize}
+    \resumeItem{Develop, debug, and maintain web applications using Python, JavaScript, SQL, and C/C++, supporting full software development lifecycle from requirements to deployment.}
+    \resumeItem{Build custom API integrations enabling clients to securely add events and data to websites.}
+    \resumeItem{Connect Azure backend with Squarespace frontend, streamlining data flow between systems.}
+    \resumeItem{Deploy scalable solutions via Azure and cloud platforms, monitoring performance and resolving production issues. Perform UAT testing and verify successful releases.}
+  \end{itemize}
+
+  \item[]
+    \textbf{Fitness Consultant} \hfill 2021--Present \\
+    \textit{El Mar Fitness LLC, Remote / Austin, TX}
+  \begin{itemize}
+    \resumeItem{Design and deliver tailored fitness programs, helping clients achieve 100\%+ strength gains and lose 10\% bodyfat while retaining muscle.}
+    \resumeItem{Oversaw full business operations, including client acquisition, reporting, and compliance, demonstrating strong communication and problem-solving skills.}
+  \end{itemize}
+\end{itemize}
+
+% Projects
+\section*{Projects}
+\begin{itemize}
+  \item[]
+    \textbf{marshallbenson.com} \hfill Nov 2024--Mar 2025 \\
+    \textit{Full-Stack Web Application}
+  \begin{itemize}
+    \resumeItem{Built secure full-stack application with custom CMS, authentication, and role-based access control.}
+    \resumeItem{Integrated Azure Web App + SQL Server backend, improving content deployment speed by 50\% and ensuring reliable uptime.}
+  \end{itemize}
+
+  \item[]
+    \textbf{elmarfitness.com} \hfill Feb 2023--Present \\
+    \textit{Business Website}
+  \begin{itemize}
+    \resumeItem{Launched platform with automated scheduling, email campaigns, and third-party API integrations.}
+    \resumeItem{Perform routine health checks, monitor system behavior, and proactively address performance issues.}
+  \end{itemize}
+
+  \item[]
+    \textbf{HomeLab} \hfill 2024--Present \\
+    \textit{AI Automation Infrastructure}
+  \begin{itemize}
+    \resumeItem{Built self-hosted AI automation infrastructure using Claude Code, Codex, Cursor, and OpenClaw agent.}
+    \resumeItem{Experimenting with prompt chaining, AI agents, and local LLM workflows.}
+  \end{itemize}
+\end{itemize}
+
+% Education
+\section*{Education}
+\textbf{The University of Texas at Austin}, Austin, TX \hfill May 2021 \\
+\textit{Bachelor of Science in Kinesiology}; Minor in Portuguese
+
+% Certifications
+\section*{Certifications}
+\textbf{Machine Learning with Python}, FreeCodeCamp \hfill Mar 2025 \\
+\textbf{Generative AI Fundamentals}, Databricks Academy \hfill May 2025
+
+\end{document}

@@ -1,0 +1,63 @@
+%-------------------------------------------------
+% ATS-Friendly Resume - Simple PDF Output
+%-------------------------------------------------
+\pdfminorversion=4
+\pdfobjcompresslevel=0
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\pagestyle{empty}
+\parindent=0pt
+\parskip=0pt
+
+\titleformat{\section}{\bfseries\uppercase}{}{0em}{\vspace{-3pt}}[\vspace{-6pt}]
+\setlist{itemsep=0pt,parsep=0pt,leftmargin=0.15in}
+
+\begin{document}
+
+\textbf{\LARGE Miguel Ramirez}
+Email: miguelcodes7@gmail.com \quad Phone: (512) 897-0010
+LinkedIn: linkedin.com/in/mramirez-fs \quad GitHub: github.com/miguelaram2016
+
+\section{Summary}
+Results-driven Operations and Technology Professional with expertise in process optimization, client onboarding, and operational efficiency. Proven track record of streamlining workflows, reducing operational costs, and implementing automation that accelerates client success.
+
+\section{Experience}
+\textbf{Operations Manager} \hfill 2024--Present
+Lawyer's Aid Service Inc Austin TX
+\begin{itemize}
+  \item Directed office operations and redesigned onboarding workflows, reducing new-hire ramp-up time
+  \item Improved compliance with Texas Secretary of State filing requirements, cutting document rejection rates
+  \item Optimized financial processes including AP and AR, invoicing, and payroll, reducing reconciliation cycles
+  \item Implemented CRM workflows and automated notifications, improving client communication
+\end{itemize}
+
+\textbf{Freelance Full Stack Web Developer} \hfill 2022--Present
+AzTech Solutions Remote
+\begin{itemize}
+  \item Developed web applications using Next.js Vue and Tailwind, accelerating client launch cycles
+  \item Automated client workflows by integrating APIs for state filings and CMS platforms
+  \item Deployed solutions via Azure Vercel and Netlify
+\end{itemize}
+
+\section{Skills}
+Operations: Workflow Optimization Process Automation Client Onboarding Vendor Management Financial Operations Compliance KPIs Analytics CRM HubSpot
+Technical: Python JavaScript SQL REST APIs Next.js Vue.js Git LaTeX
+Cloud: Azure AWS Vercel Netlify Stripe SQL Server
+Languages: English Spanish Portuguese
+
+\section{Education}
+University of Texas at Austin BS Kinesiology Minor Portuguese 2021
+Certifications: Machine Learning Python FreeCodeCamp Generative AI Databricks
+
+\section{Projects}
+marshallbenson.com Built secure full-stack application with custom CMS and authentication Azure Web App SQL Server backend
+elmarfitness.com Launched platform with automated scheduling and CMS integration improved mobile UX
+
+\end{document}

@@ -1,0 +1,147 @@
+%-------------------------------------------------
+% Resume in LaTeX
+% Author: Miguel Ramirez
+% Date: 2025
+% License: MIT License
+%-------------------------------------------------
+
+\documentclass[letterpaper,10pt]{article}
+\usepackage{latexsym}
+\usepackage{enumitem}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{fancyhdr}
+
+% Page setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+% List settings
+\setlist[itemize]{noitemsep, leftmargin=0.25in}
+\setlist[enumerate]{noitemsep, leftmargin=0.25in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[{\color{black}\titlerule\vspace{-3pt}}]
+
+% Ensure ATS readability
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+
+% Document
+\begin{document}
+
+% Heading
+\begin{center}
+  {\Large \scshape Miguel Ramirez} \\ \vspace{0pt}
+  Austin, TX | (512) 897-0010 | miguelcodes7@gmail.com \\ 
+  linkedin.com/in/mramirez-fs | github.com/miguelaram2016 | mig.is-a.dev
+\end{center}
+
+% Professional Summary
+\section*{Professional Summary}
+\begin{itemize}
+  \resumeItem{Results-driven Application Support Engineer with 2+ years of experience in troubleshooting, debugging, and maintaining production applications. Skilled in SQL database management, API integration, root-cause analysis, and incident resolution. Proven track record of improving business processes, communicating with stakeholders, and creating technical documentation. Passionate about technology and continuous learning.}
+\end{itemize}
+
+% Technical Skills
+\section*{Technical Skills}
+\begin{itemize}
+  \resumeItem{\textbf{Programming Languages:} Python, JavaScript, SQL, C/C++, HTML/CSS, Java}
+  \resumeItem{\textbf{Frameworks and Tools:} Next.js, Vue.js, Express, Flask, Git, JIRA, Confluence, LaTeX}
+  \resumeItem{\textbf{Cloud and Platforms:} Azure, AWS S3, Vercel, Netlify, Render, SQL Server, MySQL}
+  \resumeItem{\textbf{Languages:} English (Native), Spanish (Native), Portuguese (Advanced)}
+\end{itemize}
+
+% Professional Experience
+\section*{Professional Experience}
+\begin{itemize}
+  \item[]
+    \textbf{Operations Manager} \hfill 2024--Present \\
+    \textit{Lawyer's Aid Service, Inc., Austin, TX}
+  \begin{itemize}
+    \resumeItem{Manage business filings with Texas Secretary of State---incorporations, LLC formations, registered agent services---ensuring compliance and timely submissions.}
+    \resumeItem{Oversee team operations and workflow, ensuring tasks are completed efficiently and deadlines are met.}
+    \resumeItem{Streamline reconciliation workflows, saving hours monthly while improving accuracy in financial processes.}
+  \end{itemize}
+
+  \item[]
+    \textbf{Freelance Full Stack Web Developer} \hfill 2022--2024 \\
+    \textit{AzTech Solutions, Remote / Austin, TX}
+  \begin{itemize}
+    \resumeItem{Developed and maintained web applications using Python, JavaScript, SQL, and C/C++, supporting full software development lifecycle from requirements to deployment.}
+    \resumeItem{Automated client workflows by integrating REST APIs for state filings and CMS platforms, handling errors and parsing results effectively.}
+    \resumeItem{Deployed scalable solutions via Azure and cloud platforms, monitoring performance and resolving production issues.}
+    \resumeItem{Implemented secure authentication and authorization, sanitizing user inputs and protecting secrets in production environments.}
+  \end{itemize}
+
+  \item[]
+    \textbf{Fitness Consultant} \hfill 2021--Present \\
+    \textit{El Mar Fitness LLC, Remote / Austin, TX}
+  \begin{itemize}
+    \resumeItem{Design and deliver tailored fitness programs, managing projects independently and prioritizing client goals based on business impact.}
+    \resumeItem{Oversaw full business operations, including client acquisition, reporting, and compliance, demonstrating strong communication and problem-solving skills.}
+  \end{itemize}
+\end{itemize}
+
+% Projects
+\section*{Projects}
+\begin{itemize}
+  \item[]
+    \textbf{marshallbenson.com} \hfill Nov 2024--Mar 2025 \\
+    \textit{Full-Stack Web Application}
+  \begin{itemize}
+    \resumeItem{Built secure full-stack application with custom CMS, authentication, and role-based access control.}
+    \resumeItem{Integrated Azure Web App + SQL Server backend, improving content deployment speed by 50\% and ensuring reliable uptime.}
+    \resumeItem{Implemented input validation and security best practices to protect sensitive content.}
+  \end{itemize}
+
+  \item[]
+    \textbf{elmarfitness.com} \hfill Feb 2023--Present \\
+    \textit{Business Website}
+  \begin{itemize}
+    \resumeItem{Launched platform with automated scheduling, email campaigns, and third-party API integrations.}
+    \resumeItem{Perform routine health checks, monitor system behavior, and proactively address performance issues.}
+  \end{itemize}
+
+  \item[]
+    \textbf{Remote Access Infrastructure} \hfill 2024--Present \\
+    \textit{Self-Hosted Server with Global Access}
+  \begin{itemize}
+    \resumeItem{Built self-hosted Flask API server enabling secure remote access to home machines from anywhere in the world.}
+    \resumeItem{Runs local LLM instances for hands-on experimentation with AI/ML technologies.}
+    \resumeItem{Implemented Tailscale and RustDesk for secure remote access and low-latency streaming.}
+    \resumeItem{Continuously explores new technologies and stays current with AI/ML industry trends.}
+  \end{itemize}
+\end{itemize}
+
+% Education
+\section*{Education}
+\begin{itemize}
+  \resumeItem{\textbf{The University of Texas at Austin}, Austin, TX \hfill May 2021 \\ \textit{Bachelor of Science in Kinesiology}; Minor in Portuguese}
+\end{itemize}
+
+% Certifications
+\section*{Certifications}
+\begin{itemize}
+  \resumeItem{\textbf{Machine Learning with Python}, FreeCodeCamp \hfill Mar 2025}
+  \resumeItem{\textbf{Generative AI Fundamentals}, Databricks Academy \hfill May 2025}
+\end{itemize}
+
+\end{document}

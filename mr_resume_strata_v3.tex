@@ -1,0 +1,161 @@
+%-------------------------------------------------
+% Resume in LaTeX
+% Author: Miguel Ramirez
+% Date: 2025
+% License: MIT License (https://opensource.org/licenses/MIT)
+%-------------------------------------------------
+
+\documentclass[letterpaper,10pt]{article}
+\usepackage{latexsym}
+\usepackage{enumitem}
+\usepackage{paralist}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{fancyhdr}
+
+% Page setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+%\setlength{\tabcolsep}{0in}
+%\setlength{\footskip}{3.60004pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+% List spacing
+\setlist[itemize]{leftmargin=0.25in, itemsep=1pt, parsep=0pt, topsep=1pt, partopsep=0pt}
+\setlist[enumerate]{leftmargin=0.25in, itemsep=1pt, parsep=0pt, topsep=1pt, partopsep=0pt}
+%\renewcommand{\labelitemi}{-}
+%\renewcommand{\labelitemii}{-}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[{\color{black}\titlerule\vspace{-3pt}}]
+
+% Ensure ATS readability
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item[] \small{#1}}
+
+% Document
+\begin{document}
+
+% Heading
+\begin{center}
+  {\Large \scshape Miguel Ramirez} \\ \vspace{0pt}
+  Austin, TX | (512) 897-0010 | miguelcodes7@gmail.com \\ 
+  linkedin.com/in/mramirez-fs | github.com/miguelaram2016 | mig.is-a.dev
+\end{center}
+
+% Professional Summary
+\section*{Professional Summary}
+\begin{compactitem}
+  \item[]
+    Results-driven Application Support Engineer with 2+ years of experience in troubleshooting, debugging, and maintaining production applications. Skilled in SQL database management, API integration, and root-cause analysis. Proven track record of communicating with stakeholders, creating technical documentation, and delivering stable solutions that enhance business operations. Proficient in Python, JavaScript, C/C++, HTML/CSS, Git, and cloud platforms.
+\end{compactitem}
+
+% Skills - ATS Optimized
+\section*{Technical Skills}
+\begin{compactitem}
+  \item[]
+    \textbf{Programming Languages:} Python, JavaScript, SQL, C/C++, HTML/CSS, Java
+  \item[]
+    \textbf{Frameworks and Tools:} Next.js, Vue.js, Express, Flask, Git, JIRA, Confluence, LaTeX
+  \item[]
+    \textbf{Cloud and Platforms:} Azure, AWS S3, Vercel, Netlify, Render, SQL Server, MySQL
+  \item[]
+    \textbf{Languages:} English (Native), Spanish (Native), Portuguese (Advanced)
+\end{compactitem}
+
+% Experience
+\section*{Professional Experience}
+\begin{compactitem}
+  \item[]
+    \textbf{Operations Manager} \hfill 2024--Present \\
+    \textit{Lawyer's Aid Service, Inc., Austin, TX}
+  \begin{itemize}
+    \resumeItem{Manage and support production applications including CRM, document management systems, and client portals---diagnosing issues, performing root-cause analysis, and resolving incidents to ensure 99.9\% uptime.}
+    \resumeItem{Interact with SQL databases to investigate data issues, run queries, and restore normal operations for internal teams and clients.}
+    \resumeItem{Engage directly with internal stakeholders to understand requirements, reproduce problems, and deliver solutions that improve accuracy and efficiency.}
+    \resumeItem{Create and maintain troubleshooting guides, internal documentation, and repeatable processes to reduce ongoing support load.}
+    \resumeItem{Collaborate with development teams to support deployments, assist in UAT testing, and verify successful releases.}
+  \end{itemize}
+
+  \item[]
+    \textbf{Freelance Full Stack Web Developer} \hfill 2022--Present \\
+    \textit{AzTech Solutions, Remote / Austin, TX}
+  \begin{itemize}
+    \resumeItem{Developed and maintained web applications using Python, JavaScript, SQL, and C/C++---supporting full software development lifecycle from requirements to deployment.}
+    \resumeItem{Automated client workflows by integrating REST APIs for state filings and CMS platforms, handling errors and parsing results effectively.}
+    \resumeItem{Deployed scalable solutions via Azure and cloud platforms, monitoring performance and resolving production issues.}
+    \resumeItem{Implemented secure authentication and authorization---sanitizing user inputs and protecting secrets in production environments.}
+  \end{itemize}
+
+  \item[]
+    \textbf{Fitness Consultant} \hfill 2021--Present \\
+    \textit{El Mar Fitness LLC, Remote / Austin, TX}
+  \begin{itemize}
+    \resumeItem{Designed and delivered tailored solutions for clients, managing projects independently and prioritizing backlog items based on business impact.}
+    \resumeItem{Oversaw full business operations---including client acquisition, reporting, and compliance---demonstrating strong communication and problem-solving skills.}
+  \end{itemize}
+\end{compactitem}
+
+% Projects
+\section*{Projects}
+\begin{compactitem}
+  \item[]
+    \textbf{marshallbenson.com} \hfill Nov 2024--Mar 2025 \\
+    \textit{Full-Stack Web Application}
+  \begin{itemize}
+    \resumeItem{Built secure full-stack application with custom CMS, authentication, and role-based access control.}
+    \resumeItem{Integrated Azure Web App + SQL Server backend, improving content deployment speed by 50\% and ensuring reliable uptime.}
+    \resumeItem{Implemented input validation and security best practices to protect sensitive content.}
+  \end{itemize}
+
+  \item[]
+    \textbf{elmarfitness.com} \hfill Feb 2023--Present \\
+    \textit{Business Website}
+  \begin{itemize}
+    \resumeItem{Launched platform with automated scheduling, email campaigns, and third-party API integrations.}
+    \resumeItem{Perform routine health checks, monitor system behavior, and proactively address performance issues.}
+  \end{itemize}
+
+  \item[]
+    \textbf{HomeLab} \hfill 2024--Present \\
+    \textit{Custom Home Server with Remote Access and Local LLM}
+  \begin{itemize}
+    \resumeItem{Implemented Flask APIs, Tailscale, and RustDesk for secure remote access and low-latency streaming.}
+    \resumeItem{Troubleshoot and resolve technical issues across Linux and Windows environments.}
+  \end{itemize}
+\end{compactitem}
+
+% Education
+\section*{Education}
+\begin{compactitem}
+  \item[]
+    \textbf{The University of Texas at Austin}, Austin, TX \hfill May 2021 \\
+    \textit{Bachelor of Science in Kinesiology}; Minor in Portuguese
+\end{compactitem}
+
+% Certifications
+\section*{Certifications}
+\begin{compactitem}
+  \item[]
+    \textbf{Machine Learning with Python}, FreeCodeCamp \hfill Mar 2025
+  \item[]
+    \textbf{Generative AI Fundamentals}, Databricks Academy \hfill May 2025
+\end{compactitem}
+
+\end{document}

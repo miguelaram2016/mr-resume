@@ -1,0 +1,175 @@
+%-------------------------------------------------
+% Resume in LaTeX
+% Author: Miguel Ramirez
+% Date: 2025
+% License: MIT License (https://opensource.org/licenses/MIT)
+%-------------------------------------------------
+
+\documentclass[letterpaper,10pt]{article}
+\usepackage{latexsym}
+\usepackage{enumitem}
+\usepackage{paralist}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{fancyhdr}
+
+% Page setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+%\setlength{\tabcolsep}{0in}
+%\setlength{\footskip}{3.60004pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+% List spacing
+\setlist[itemize]{leftmargin=0in, itemsep=1pt, parsep=0pt, topsep=1pt, partopsep=0pt}
+\setlist[enumerate]{leftmargin=0in, itemsep=1pt, parsep=0pt, topsep=1pt, partopsep=0pt}
+%\renewcommand{\labelitemi}{$\circ$}
+%\renewcommand{\labelitemii}{$\circ$}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[{\color{black}\titlerule\vspace{-3pt}}]
+
+% Ensure ATS readability
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+
+% Document
+\begin{document}
+
+% Heading
+\begin{center}
+  {\Large \scshape Miguel Ramirez} \\ \vspace{0pt}
+  Austin, TX | \href{tel:+15128970010}{(512)897-0010} | miguelcodes7@gmail.com \\
+  \href{https://linkedin.com/in/mramirez-fs}{linkedin.com/in/mramirez-fs} $|$
+  \href{https://github.com/miguelaram2016}{github.com/miguelaram2016} $|$
+  \href{https://mig.is-a.dev}{mig.is-a.dev}
+\end{center}
+
+% Professional Summary
+\section*{Professional Summary}
+\begin{compactitem}
+  \item[]
+    Application Support Engineer with 2+ years of experience in troubleshooting, debugging, and maintaining production applications. Skilled in SQL database management, API integration, and root-cause analysis. Proven ability to communicate with stakeholders, document processes, and deliver stable solutions that enhance business operations. Proficient in Python, JavaScript, C/C++, and modern web technologies.
+\end{compactitem}
+
+% Education
+\section*{Education}
+\begin{compactitem}
+  \item[]
+    \textbf{The University of Texas at Austin}, Austin, TX \hfill May 2021 \\
+    \textit{Bachelor of Science in Kinesiology}; Minor in Portuguese \vspace{3pt} \\ 
+    \textbf{Certifications} \\
+    \textit{\href{https://www.freecodecamp.org/certification/migglenero/machine-learning-with-python-v7}{Machine Learning with Python}}, FreeCodeCamp \hfill Mar 2025 \\
+    \textit{\href{https://credentials.databricks.com/052cc354-c947-42d8-81bb-40c38d77ace3\#acc.B2op0GxP}{Generative AI Fundamentals}}, Databricks Academy \hfill May 2025
+\end{compactitem}
+
+% Experience
+\section*{Experience}
+\begin{compactitem}
+  \item[]
+    \textbf{Operations Manager} \hfill 2024–Present \\
+    \textit{Lawyer's Aid Service, Inc., Austin, TX}
+    
+    \begin{compactitem}[leftmargin=0.15in]
+      \resumeItem{Manage and support production applications including CRM, document management, and client portals—diagnosing issues, performing root-cause analysis, and resolving incidents to ensure 99.9\% uptime.}
+      \resumeItem{Interact with SQL databases to investigate data issues, run queries, and restore normal operations for internal teams and clients.}
+      \resumeItem{Engage directly with internal stakeholders to understand requirements, reproduce problems, and deliver solutions that improve accuracy and efficiency.}
+      \resumeItem{Create and maintain troubleshooting guides, internal documentation, and repeatable processes to reduce ongoing support load.}
+      \resumeItem{Collaborate with development teams to support deployments, assist in UAT, and verify successful releases.}
+    \end{compactitem}
+
+  \item[]
+    \textbf{Freelance Full Stack Web Developer} \\hfill 2022–Present \\
+    \textit{AzTech Solutions, Remote / Austin, TX}
+    
+    \begin{compactitem}[leftmargin=0.15in]
+      \resumeItem{Developed and maintained web applications using Python, JavaScript, and SQL—supporting full software development lifecycle from requirements to deployment.}
+      \resumeItem{Automated client workflows by integrating REST APIs for state filings and CMS platforms, handling errors and parsing responses effectively.}
+      \resumeItem{Deployed scalable solutions via Azure and cloud platforms, monitoring performance and resolving production issues.}
+      \resumeItem{Implemented secure authentication and authorization—sanitizing user inputs and protecting secrets in production environments.}
+    \end{compactitem}
+
+  \item[]
+    \textbf{Fitness Consultant} \hfill 2021–Present \\
+    \textit{El Mar Fitness LLC, Remote / Austin, TX}
+    
+    \begin{compactitem}[leftmargin=0.15in]
+      \resumeItem{Designed and delivered tailored solutions for clients, managing projects independently and prioritizing backlog items based on business impact.}
+      \resumeItem{Oversaw full business operations—including client acquisition, reporting, and compliance—demonstrating strong communication and problem-solving skills.}
+    \end{compactitem}
+\end{compactitem}
+
+% Projects
+\section*{Projects}
+\begin{compactitem}
+  \item[]
+    \textbf{\href{https://marshallbenson.com}{marshallbenson.com}} \hfill Nov 2024–Mar 2025 \\
+    \textit{Full-Stack Web Application}
+    
+    \begin{compactitem}[leftmargin=0.15in]
+      \resumeItem{Built secure full-stack application with custom CMS, authentication, and role-based access control.}
+      \resumeItem{Integrated Azure Web App + SQL Server backend, improving content deployment speed by 50\%.}
+      \resumeItem{Implemented input validation and security best practices to protect sensitive artist content.}
+    \end{compactitem}
+
+  \item[]
+    \textbf{\href{https://elmarfitness.com}{elmarfitness.com}} \hfill Feb 2023–Present \\
+    \textit{Business Website}
+    
+    \begin{compactitem}[leftmargin=0.15in]
+      \resumeItem{Launched platform with automated scheduling, email campaigns, and third-party API integrations.}
+      \resumeItem{Perform routine health checks, monitor system behavior, and proactively address performance issues.}
+    \end{compactitem}
+
+  \item[]
+    \textbf{HomeLab} \hfill 2024–Present \\
+    \textit{Custom Home Server with Remote Access and Local LLM}
+    
+    \begin{compactitem}[leftmargin=0.15in]
+      \resumeItem{Implemented Flask APIs, Tailscale, and RustDesk for secure remote access and low-latency streaming.}
+      \resumeItem{Troubleshoot and resolve technical issues across Linux and Windows environments.}
+    \end{compactitem}
+\end{compactitem}
+
+% Skills
+\section*{Skills}
+\begin{compactitem}[leftmargin=0in]
+  \item[]
+    \textbf{Programming Languages:} Python, JavaScript, SQL, C/C++, HTML/CSS \\
+    \textbf{Frameworks \& Tools:} Next.js, Vue, Express, Git, JIRA, Confluence, LaTeX, OpenAI API \\
+    \textbf{Cloud \& Platforms:} Azure, AWS S3, Vercel, Netlify, Render, SQL Server \\
+    \textbf{Databases:} SQL, MySQL, SQL Server, database queries and troubleshooting \\
+    \textbf{Languages:} English (Native), Spanish (Native), Portuguese (Advanced)
+\end{compactitem}
+
+
+% Community Involvement
+\section*{Community Involvement}
+\begin{compactitem}
+  \item[] 
+  \textbf{San Antonio Food Bank}\textit{, Urban Farm Volunteer} \hfill Apr 2025
+  
+  \begin{compactitem}[leftmargin=0.15in]
+    \resumeItem{Assisted with crop maintenance and harvesting, supporting community food security programs.}
+  \end{compactitem}
+\end{compactitem}
+
+\end{document}
